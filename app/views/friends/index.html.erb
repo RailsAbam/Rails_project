@@ -2,13 +2,14 @@
 
 <h1>Friends</h1>
 
-<div id="friends">
+<table id="friends">
   <% @friends.each do |friend| %>
     <%= render friend %>
     <p>
       <%= link_to "Show this friend", friend %>
     </p>
   <% end %>
-</div>
+</table>
 
 <%= link_to "New friend", new_friend_path %>
+
