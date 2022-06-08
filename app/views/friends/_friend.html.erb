@@ -1,4 +1,55 @@
-<div id="<%= dom_id friend %>">
+
+<table class=" table table-striped table-bordered">
+  <thead  class = 'thead-dark'>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phone Number</th>
+      <th scope="col">Address</th>
+      <th scope="col">Gender</th>
+      <th scope="col">City</th>
+      <th scope="col">State</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td><%= friend.first_name %></td>
+      <td><%= friend.last_name %></td>
+      <td><%= friend.email %></td>
+      <td><%= friend.phone %></td>
+      <td><%= friend.address %></td>
+      <td><%= friend.gender %></td>
+      <td><%= friend.city %></td>
+      <td><%= friend.state %></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
   <p>
     <strong>First name:</strong>
     <%= friend.first_name %>
@@ -34,9 +85,11 @@
     <%= friend.state %>
   </p>
 
+
   <p>
     <strong>City:</strong>
     <%= friend.city %>
   </p>
 
-</div>
+-->
+
