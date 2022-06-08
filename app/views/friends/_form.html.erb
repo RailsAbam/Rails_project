@@ -10,48 +10,49 @@
       </ul>
     </div>
   <% end %>
-
-  <div>
-    <%= form.label :first_name, style: "display: block" %>
-    <%= form.text_field :first_name %>
+<div class = 'container'>
+  <div class = 'form-control-sm  field form-group'>
+    <% form.label :first_name, style: "display: block" %>
+    <%= form.text_field :first_name, placeholder: 'First Name' %>
   </div>
 
-  <div>
-    <%= form.label :last_name, style: "display: block" %>
-    <%= form.text_field :last_name %>
+  <div class = 'form-control-sm'  >
+    <% form.label :last_name, style: "display: block" %>
+    <%= form.text_field :last_name, placeholder: 'Last Name'%>
   </div>
 
-  <div>
-    <%= form.label :email, style: "display: block" %>
-    <%= form.text_field :email %>
+  <div class = 'form-control-sm'  >
+    <% form.label :email, style: "display: block" %>
+    <%= form.text_field :email, placeholder: 'Email'%>
   </div>
 
-  <div>
-    <%= form.label :phone, style: "display: block" %>
-    <%= form.text_field :phone %>
+  <div class = 'form-control-sm' >
+    <% form.label :phone, style: "display: block" %>
+    <%= form.text_field :phone, placeholder: 'Phone Number '  %>
   </div>
 
-  <div>
-    <%= form.label :address, style: "display: block" %>
-    <%= form.text_field :address %>
+  <div class = 'form-control-sm  '>
+    <% form.label :address, style: "display: block" %>
+    <%= form.text_field :address, placeholder: 'Address' %>
   </div>
 
-  <div>
-    <%= form.label :gender, style: "display: block" %>
-    <%= form.text_field :gender %>
+  <div class = 'form-control-sm' >
+    <% form.label :gender, style: "display: block" %>
+    <%= form.text_field :gender, placeholder: 'Gender' %>
   </div>
 
-  <div>
-    <%= form.label :state, style: "display: block" %>
-    <%= form.text_field :state %>
+  <div  class = 'form-control-sm' >
+    <% form.label :state, style: "display: block" %>
+    <%= form.text_field :state, placeholder: 'State' %>
   </div>
 
-  <div>
-    <%= form.label :city, style: "display: block" %>
-    <%= form.text_field :city %>
+  <div class = 'form-control-sm'  >
+    <% form.label :city, style: "display: block" %>
+    <%= form.text_field :city, placeholder: 'City' %>
   </div>
 
-  <div>
+  <div class =  form-control-sm>
     <%= form.submit %>
+  </div>
   </div>
 <% end %>
